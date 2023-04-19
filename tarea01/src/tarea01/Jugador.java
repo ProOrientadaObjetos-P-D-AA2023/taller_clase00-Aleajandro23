@@ -9,17 +9,43 @@ package tarea01;
  * @author Ruben Condoy
  */
 public class Jugador {
-    private int id;
-    private String nombre;
-    private String apellido;
-    private int edad;
-
-    public Jugador(int id, String nombre, String apellido, int edad) {
+    
+    public Jugador(String id, String nombre, String apellido, int edad) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
     }
+    public void setCedula(String cedula){
+       this.id = id;
+    }
+    public void setNombre(String nombre){
+       this.nombre = nombre;
+    }
+    public void setApellido(String apellido){
+       this.apellido = apellido;
+    }
+    public void setEdad(int edad){
+       this.edad = edad;
+    }
+    
+    public String getCedula(){
+       return id;
+    }
+    public String getNombre(){
+       return nombre;
+    }
+    public String getApellido(){
+       return apellido;
+    }
+    public int getEdad(){
+       return edad;
+    }
+    
+    private String id;
+    private String nombre;
+    private String apellido;
+    private int edad;
     
     public void caminar(){
         System.out.println("Hola " + nombre +" está caminando ");
